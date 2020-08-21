@@ -1,0 +1,39 @@
+/* Regular clients */
+.regular-clients .list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 94px;
+}
+
+.section-title-regular-clients {
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
+.regular-clients-links a {
+  @extend %align-center;
+  height: 90px;
+  width: 170px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+ 
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+  border: 1px solid #2196f3;
+  fill: $accent-color;
+}
+}
+
+.regular-clients-links {
+  fill: #afb1b8;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+
