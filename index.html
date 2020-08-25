@@ -14,109 +14,124 @@
     <!--HEADER-->
      <header class="header">
         <div class="container">
-        <nav class="navigation">
-            <a class="logo link" href="./index.html"><span class="web">Web</span> Studio</a>
-            <ul class="site-nav-list list">
-               <li class="site-nav-list-item current ">
-                   <a class="site-nav-list-item-link current link " href="./index.html">Студия</a>
-               </li>
-               <li class="site-nav-list-item">
-                   <a class="site-nav-list-item-link link" href="./portfolio.html">Портфолио</a>
-               </li>
-               <li class="site-nav-list-item">
-                   <a class="site-nav-list-item-link link" href="">Контакты</a>
-               </li>
-            </ul>
-         </nav>
-        
-        <div class="header-address"> 
-            <ul class="header-address-items">
-                <li class="header-address-list">
-                    <a class="header-address-mail link" href="info@devstudio.com">
-                        <svg class="header-address-svg">
-                            <use href="./image/symbol-defs.svg#icon-mail"></use>
-                        </svg> 
-                        info@devstudio.com
-                    </a>
-                   </li>
-                <li class="header-address-list">
-                    <a class="header-address-tel link" href="+380961111111">
-                        <svg class="header-address-svg">
-                            <use href="./image/symbol-defs.svg#icon-tel"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+            <a class="logo link" href="./index.html">
+                <span class="web">Web</span> Studio
+            </a>
+
+            <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-wrapper" data-menu-button>
+                <svg>
+                    <use class="icon-path" href="./image/sprite.svg#icon-path" width="24px" height="16px"></use>
+                    <use class="icon-cross" href="./image/sprite.svg#icon-cross" width="19px" height="19px"></use>
+                </svg>
+
+            </button>
+
+            <div class="menu-wrapper" data-menu>
+                <nav class="navigation">
+                    <ul class="site-nav-list list">
+                      <li class="site-nav-list-item current ">
+                          <a class="site-nav-list-item-link current link " href="./index.html">Студия</a>
+                      </li>
+                      <li class="site-nav-list-item">
+                          <a class="site-nav-list-item-link link" href="./portfolio.html">Портфолио</a>
+                      </li>
+                      <li class="site-nav-list-item">
+                          <a class="site-nav-list-item-link link" href="">Контакты</a>
+                      </li>
+                   </ul>
+                </nav>
                
-        </div>
+               <div class="header-address"> 
+                   <ul class="header-address-items list">
+                       <li class="header-address-list">
+                           <a class="header-address-mail link" href="info@devstudio.com">
+                               <svg class="header-address-svg">
+                                   <use href="./image/sprite.svg#icon-envelope"></use>
+                               </svg> 
+                               info@devstudio.com
+                           </a>
+                          </li>
+                       <li class="header-address-list">
+                           <a class="header-address-tel link" href="+380961111111">
+                               <svg class="header-address-svg">
+                                   <use href="./image/sprite.svg#icon-tel"></use>
+                               </svg>
+                               +38 096 111 11 11
+                           </a>
+                       </li>
+                   </ul>
+               </div>
+            </div>
+        
       </div>
      </header>
 
+    <script src="./js/menu.js"></script>
+    </body>
+    </html>
+
 
     <!--MAIN-->
-    <main>
+    <!-- <main>
     <!--HERO-->
-        <section class="hero overlay">
-            <div class="container">    
+        <!-- <section class="hero overlay">
                     <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br /> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
                     <button class="btn">Заказать услугу</button>
-            </div>
-           </section>
-       
+         </section> -->
+        
 
        <!--signs about us--> 
-       
+<!--        
         <section class="about-us">
             <div class="container">
             <h2 hidden > Second title</h2>
-            <ul class="section list">
-                <li class="section-list plate">
-                    <div class="section-list-div">
-                        <svg class="about-us-svg" width="70px" height="70px">
+            <ul class="about-us-list list">
+                <li class="about-us-links plate">
+                    <div class="about-us-div">
+                        <svg class="about-us-svg" width="65px" height="70px">
                             <use class="picture-svg" href="./image/symbol-defs.svg#icon-plate"></use>
                         </svg>
                     </div>
-                    <h3 class="section-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+                    <h3 class="about-us-title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
                     <p class="discription">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>   
                 </li>
                 
-                <li class="section-list clock ">
-                    <div class="section-list-div">
-                        <svg class="about-us-svg" width="70px" height="70px">
+                <li class="about-us-links clock ">
+                    <div class="about-us-div">
+                        <svg class="about-us-svg" width="67px" height="70px">
                             <use class="picture-svg" href="./image/symbol-defs.svg#icon-clock"></use>
                         </svg>
                     </div>
-                    <h3 class="section-title">ПУНКТУАЛЬНОСТЬ</h3>
+                    <h3 class="about-us-title">ПУНКТУАЛЬНОСТЬ</h3>
                     <p class="discription">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>   
                 </li>
 
-                <li class="section-list comp ">
-                    <div class="section-list-div">
-                        <svg class="about-us-svg" width="70px" height="70px">
+                <li class="about-us-links comp ">
+                    <div class="about-us-div">
+                        <svg class="about-us-svg" width="70px" height="53px">
                             <use  href="./image/symbol-defs.svg#icon-comp"></use>
                         </svg>
                     </div>
-                    <h3 class="section-title">ПЛАНИРОВАНИЕ</h3>
+                    <h3 class="about-us-title">ПЛАНИРОВАНИЕ</h3>
                     <p class="discription">Равным образом консультация с широким активом в значительной степени обуславливает.</p>   
                 </li>
 
-                <li class="section-list cosm">
-                    <div class="section-list-div">
+                <li class="about-us-links cosm">
+                    <div class="about-us-div">
                         <svg class="about-us-svg" width="70px" height="70px">
-                            <use class="picture-svg" href="./image/symbol-defs.svg#icon-cosmonaut"></use>
+                            <use href="./image/symbol-defs.svg#icon-cosmonaut"></use>
                         </svg>
                     </div>
-                    <h3 class="section-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+                    <h3 class="about-us-title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
                     <p class="discription">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>   
                 </li>
             </ul>
             </div>
         </section>
         
-    
+     -->
 
-         <!--What we do-->
+         <!-- What we do
         
         <section class="section-we-do">
         <div class="container">
@@ -138,11 +153,11 @@
                
         </div>      
         </section>
-        
+         -->
 
-         <!--Our team-->
+         <!-- Our team -->
          
-        <section class="our-team">
+        <!-- <section class="our-team">
             <div class="container">
                 <h2 class="section-title-our-team"> Наша команда </h2>
                 <ul class="our-team-list list">
@@ -312,10 +327,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
        
 
-         <!-- Regular clients-->
+         <!-- Regular clients
         <section class="regular-clients">
              <div class="container">
                 <h2 class="section-title-regular-clients"> Постоянные клиенты </h2>
@@ -370,12 +385,12 @@
              
                 </ul>
             </div>
-        </section>
-         
-    </main>
+        </section> -->
+<!--          
+    </main> -->
 
 
-    <footer>
+    <!-- <footer>
         <div class="container">
             <div class="footer">
                 <div class="footer1" >  
@@ -423,9 +438,9 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" >
+    <!-- <div class="backdrop is-hidden" >
                 <form action="#" method="GET" class="contact-form-hero" autocomplete="off">
                     <p class="contact-form-title"> Оставьте свои данные, мы вам перезвоним</p>
                     <button data-modal-close type="button" class="modal-close-btn">
@@ -477,8 +492,6 @@
                     </label>
                     <button type="submit" class="submit-btn">Отправить</button>
                 </form>
-    </div>   
-  
-</body>
-</html>
+    </div>    -->
+
 

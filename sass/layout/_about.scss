@@ -1,46 +1,33 @@
-// /* Signs about us */
-// .about-us {
-//   padding-top: 94px;
-//   padding-bottom: 47px;
 
-//   &-svg {
-//     width: 70px;
-//     height: 70px;
-  
-//     &:hover {
-//       fill: $accent-color;
-//     }
-//   }
-// }
 
-// .section {
-//   display: flex;
+.about-us-links:not(:last-child){
+        margin-bottom: 30px;
+    }
 
-//   &-list:not(:last-child) {
-//     margin-right: 30px;
-//   }
 
-//   &-title {
-//     color: $title-text-color;
-//     margin-top: 30px;
-//     margin-bottom: 10px;
-//   }
+.about-us-title{
+    color:$title-text-color;
+    margin-top: 30px;
+    margin-bottom: 10px;  
+}
 
-//   &-list-div {
-//     @extend %align-center;
-//     height: 120px;
-//     width: 270px;
-//     background-color: $secondary-bg-color;
-//     border-radius: 4%;
-//   }
-// }
+.discription{
+    font-weight: normal;
+    line-height: 24px;
+}
 
-// .discription {
-//   font-weight: normal;
-//   line-height: 24px;
-//   margin-top: 0;
-//   margin-bottom: 0;
-// }
+
+.about-us-div{
+   @extend %alignment; 
+    height: 120px;
+    max-width: 450px;
+    background-color:$secondary-bg-color;
+    border-radius: 4%;
+} 
+
+.about-us-svg:hover{
+    fill:$accent-color;
+}
 
 
 

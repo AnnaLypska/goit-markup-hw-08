@@ -1,13 +1,18 @@
-// .btn {
-//     @include font ($fs:16px, $lh:1.88)
+// .btn{
+//     @include font ($fs: 16px, $lh: 1.88, $ls: 0.06em);
 //     font-family: Roboto;
 //     font-style: normal;
-//     letter-spacing: 0.06em;
+
 //     background-color: $button-color;
 //     color: $title-secondary-text-color;
-//     padding: 10px 32px;
+ 
 //     min-width: 136px;
 //     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 //     border-radius: 4px;
 //     border: transparent;
+
+//     padding: 10px 32px;
+    
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 // }
+

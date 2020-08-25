@@ -1,0 +1,11 @@
+h2{
+    @include font ($fs: 28px, $lh: 1.18);
+    color: $title-text-color;
+    text-align: center;
+   
+}
+
+section{
+    padding-top:60px;
+    padding-bottom: 60px;
+}
