@@ -1,0 +1,12 @@
+
+
+.logo {
+    @include font ($fs: 24px, $lh: 1.17);
+    font-family: Raleway;
+    font-style: normal;
+    color:$title-text-color;
+}
+
+.web{
+    color: $accent-color;
+}

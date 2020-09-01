@@ -1,8 +1,8 @@
-
-
-.about-us-links:not(:last-child){
+@media screen and (max-width:767px){
+    .about-us-links:not(:last-child){
         margin-bottom: 30px;
     }
+}
 
 
 .about-us-title{
@@ -12,15 +12,15 @@
 }
 
 .discription{
-    font-weight: normal;
-    line-height: 24px;
+    @include font ($fs: 14px, $fw:normal, $lh: 1.143);
+   color: $primery-text-color;
 }
 
 
 .about-us-div{
    @extend %alignment; 
     height: 120px;
-    max-width: 450px;
+    width: 450px;
     background-color:$secondary-bg-color;
     border-radius: 4%;
 } 
@@ -29,7 +29,45 @@
     fill:$accent-color;
 }
 
+@media screen and (min-width:768px){
+    .about-us{
+        padding-top:47px;
+        padding-bottom: 47px;
+    }
+
+    .about-us-list{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .about-us-div{
+        height: 120px;
+        width: 354px;
+    }
+    .about-us-links:nth-child(2n+1){
+        margin-right: 30px;  
+    }
+    .about-us-links:nth-child(-n+2){
+        margin-bottom: 30px;  
+    }
+
+    .discription{
+        width: 354px;
+    }
+}
 
 
+@media screen and (min-width:1200px){
 
+    .about-us-div{ 
+     height: 120px;
+     width: 270px;
+    }
+     .about-us-links:not(:last-child){
+        margin-right: 30px;
+        margin-bottom: 0;
+    } 
 
+    .discription{
+        width: 270px;
+    }
+}

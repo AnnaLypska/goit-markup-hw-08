@@ -8,4 +8,10 @@ h2{
 section{
     padding-top:60px;
     padding-bottom: 60px;
+   
+}
+
+h3{
+    @include font ($fs: 16px, $fw:500, $lh: 1.188);
+    color: $title-text-color;
 }

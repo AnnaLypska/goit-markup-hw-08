@@ -1,0 +1,22 @@
+.social-list-items-links{
+    @extend %alignment;
+    height: 44px;
+    width: 44px; 
+    border-radius: 50px;
+    fill:#71778b;
+    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+ .social-list-items-links:hover,
+ .social-list-items-links:focus{
+    background-color: $button-color;
+    fill:#FFFFFF;
+} 
+
+ .social-list-items-links-svg{
+    height: 20px;
+    width: 20px;
+    align-items: center;
+ 
+} 
